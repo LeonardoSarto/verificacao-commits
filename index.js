@@ -5,9 +5,7 @@ form.addEventListener('submit', function(event){
     const dataInicial = document.querySelector("#dataInicial").value
     const dataFinal = document.querySelector("#dataFinal").value
     if(repositorio == "" || dataInicial == "" || dataFinal == "") {
-        alert("Digite")
-        document.getElementById("alert").style.display = "block"
-        return
+        alert("Pesquise por um repositório no campo repositório")
     }
     buscarCommits(repositorio, dataInicial, dataFinal)    
 })

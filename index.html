@@ -2,42 +2,41 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Verificação de Commits</title>
         <link rel="stylesheet" href="index.css">
     </head>
-    <body>
-        <form>
-            <label>
-                Repositório
-            </label>
-            <br>
-            <input type="text" id="repositorio">
-            <br>
-            <br>
-            <label>
-                Data inicial
-            </label>
-            <br>
-            <input id="dataInicial" type="date">
-            <br>
-            <br>
-            <label>
-                Data final
-            </label>
-            <br>
-            <input type="date" id="dataFinal">
-            <br>
-            <br>
-            <input type="submit" value="Pesquisar">
-        </form>
-        <div id="dados"></div>
-        <div class="alert" id="alert">
-            Informe o repositorio
+    <body class="background-color">
+        <div class="container">
+            <div class="nav display-flex ps-2">
+                <h1 class="white-text overflow-hidden">
+                    Verificação de commits de um repositório no Github
+                </h1>
+            </div>
+            
+            <form>
+                <br>
+                <div class="input">
+                    <label class="white-text">
+                        Repositório
+                    </label>
+                    <input type="text" id="repositorio">
+                </div>
+                <div class="input">
+                    <label class="white-text">
+                        Data inicial
+                    </label>
+                    <input id="dataInicial" type="date">
+                </div>
+                <div class="input">
+                    <label class="white-text">
+                        Data final
+                    </label>
+                    <input type="date" id="dataFinal">
+                </div>
+                <input type="submit" class="submit" value="Pesquisar">
+            </form>
         </div>
-        <script src="index.js">
-        </script>
+        <script src="index.js"></script>
     </body>
 </html>
