@@ -12,14 +12,8 @@ form.addEventListener('submit', function(event){
 })
 
 function buscarCommits(repositorio, dataInicial, dataFinal) {
-    const token = "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"
-    const options = {
-        headers: {
-            Authorization: `Token ${token}`
-        }
-    }
     const url = `https://api.github.com/repos/${repositorio}/commits?since=${dataInicial}&until=${dataFinal}`
-    fetch(url, options).then(response => response.json()).then(commits => {
+    fetch(url).then(response => response.json()).then(commits => {
         contarCommits(commits)
     })
 }
