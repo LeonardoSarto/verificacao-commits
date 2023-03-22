@@ -43,7 +43,7 @@ body {
     padding-left: 2rem;
 }
 
-.input {
+.input-title {
     display: inline-grid;
     justify-items: start;
 }
@@ -56,4 +56,27 @@ form {
 
 .overflow-hidden {
     overflow: hidden;
+}
+
+input {
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:disabled {
+    color: white;
+}
+
+.display-none {
+    display: none;
+}
+
+table {
+    color: white;
+    justify-content: center;
+    display: flex;
 }

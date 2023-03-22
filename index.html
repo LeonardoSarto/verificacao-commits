@@ -13,22 +13,21 @@
                     Verificação de commits de um repositório no Github
                 </h1>
             </div>
-            
             <form>
                 <br>
-                <div class="input">
+                <div class="input-title">
                     <label class="white-text">
-                        Repositório
+                        Link do repositório
                     </label>
                     <input type="text" id="repositorio">
                 </div>
-                <div class="input">
+                <div class="input-title">
                     <label class="white-text">
                         Data inicial
                     </label>
                     <input id="dataInicial" type="date">
                 </div>
-                <div class="input">
+                <div class="input-title">
                     <label class="white-text">
                         Data final
                     </label>
@@ -36,6 +35,22 @@
                 </div>
                 <input type="submit" class="submit" value="Pesquisar">
             </form>
+            <br>
+            <form class="display-none" id="autor_repositorio">
+                <div class="input-title">
+                    <label class="white-text">
+                        Autor
+                    </label>
+                    <input disabled type="text" id="autor">
+                </div>
+                <div class="input-title">
+                    <label class="white-text">
+                        Nome do repositório
+                    </label>
+                    <input disabled id="nome_repositorio" type="text">
+                </div>
+            </form>
+            <div id="commits-table"></div>
         </div>
         <script src="index.js"></script>
     </body>
